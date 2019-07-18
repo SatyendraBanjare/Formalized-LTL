@@ -1,6 +1,19 @@
 Require Import Stream.
 Require Import Coq.Logic.Classical Omega.
 
+(*
+
+This section contains the different definitions to be used for
+the logic system. The understanding of these definitions can be 
+inferred directly from the wikipedia page.
+
+The used Logic Operators are And , Or , Not.
+
+The used Modal operators are Until , Release , Eventually ,
+WeakUntil , StrongRelease.
+
+*)
+
 Definition LTLProp (A : Type) : Type := Stream A -> Prop.
 
 Section LTL.
